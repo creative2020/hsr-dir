@@ -1,0 +1,379 @@
+/* 
+
+Theme Name:  HSR - PremiumPress Child Theme 
+
+Theme URI:   http: //www.2020creative.com 
+
+Description:  This is a child theme for the PremiumPress responsive framework.
+
+Author:     Jeff Potts
+
+Author URI:   http: //www.2020creative.com
+
+Template:    DT
+
+Version:    1.0
+ * GitHub Theme URI: https://github.com/creative2020/hsr-dir
+ * GitHub Branch: master
+
+*/ 
+
+
+
+/*** LINKS ***/
+
+a { color: #474646 }
+
+
+
+/*** BUTTONS ***/
+
+.btn-primary { background-image:none; background: #515151; border-color:#515151;  }
+
+.btn-primary:focus, .btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] { color: white; background-color: #606060;}	
+
+
+
+/*** BODY ***/
+
+body { background: #fff; font-family: 'Open Sans', sans-serif; } 
+
+.page-wrapper  { }
+
+
+
+/*** HEADER ***/
+
+header {   background:#fff;  }
+
+header .row {}
+
+
+
+/*** TOP MENU ***/
+
+#core_header_navigation {  border-bottom: 1px solid #ddd; padding-left:8.33333333%; }
+
+#core_header_navigation .breadcrumb {  }
+
+#core_header_navigation .breadcrumb > li a { color: #444; text-transform: uppercase; font-weight:normal; font-size:11px;  }
+
+#core_header_navigation .breadcrumb > li + li:before { color:#fff; opacity: 0.1; }
+
+#core_header_navigation .welcometext { color:#444; }
+
+	
+
+	/*** LOGO ***/
+
+	#core_logo { padding-left:8.33333333%; }
+
+ 	#core_logo img { padding-top:20px; padding-bottom:20px; }
+
+	
+
+	/*** BANNER ***/
+
+	#core_banner img { float:right; }
+
+#HomeMainBanner {
+    background-color:#01365d;
+}
+#HomeMainBanner img{
+    margin:auto;
+}
+
+	
+
+	/*** HEADER STYLE 2 ***/
+
+	.header_style2 .nav > li > a { color:#444; text-transform: uppercase; font-weight:regular; padding-left:8.33333333%;}
+
+	
+
+	/*** SEARCH BOX ***/
+
+	.wlt_searchbox { margin-right:0px; padding:10px; margin-top:0px; }
+
+	.wlt_searchbox .wlt_button_search { margin-top:10px; margin-right:10px; color: #4E8CBD; }
+
+	.wlt_searchbox .wlt_button_search:hover { color:#444; }	
+
+	.wlt_searchbox input { background:#fff; }
+
+ 	
+
+/*** MENU ***/
+
+#core_menu_wrapper .navbar { border:0px; padding:0px; padding-left:8.33333333%; padding-right:8.33333333%; overflow:visible;}
+
+#core_menu_wrapper {
+
+background: #bdc2c6;
+
+/*
+background: -moz-linear-gradient(top, #4F8EB1 0%, #417D94 100%);
+
+background: -webkit-linear-gradient(top, #4F8EB1 0%,#417D94 100%);
+
+background: -webkit-gradient(linear, top, bottom, color-stop(0%, #4F8EB1), color-stop(100%, #417D94));
+
+background: -o-linear-gradient(top, #4F8EB1 0%,#417D94 100%);
+
+background: -ms-linear-gradient(top, #4F8EB1 0%,#417D94 100%);
+
+background: linear-gradient(to bottom, #4F8EB1 0%,#417D94 100%);
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4F8EB1', endColorstr='#417D94',GradientType=0 );
+*/
+
+border-bottom: 0px solid #004894;
+    
+
+background: #bdc2c6 url('http://homespotrealty.com/wp-content/themes/genesis-hs/images/home-img.png') right no-repeat;
+
+
+
+}
+
+#core_menu_wrapper .navbar-nav > li { padding: 20px 0px;   min-width:140px; }
+
+#core_menu_wrapper .navbar-nav > li a { color:#FFF;  text-align:center; text-shadow: 0 0 0 rgb(29, 88, 14) !important; }
+
+#core_menu_wrapper .navbar-nav > li.homeli { min-width:80px; border-left:0px; }
+
+#core_menu_wrapper .navbar-nav > li.homeli a {  color: #fff; }
+
+#core_menu_wrapper .navbar-nav > li:hover, #core_menu_wrapper .navbar-nav > li.current-menu-item {  }
+
+ 
+
+	/*** SMALL MOBILE MENU ***/
+
+	#wlt_smalldevicemenubar a.b1 { background: #417D94; }
+
+		
+
+	/*** TOGGLE MENU ***/
+
+	#core_menu_wrapper .dropdown-menu > li { }
+
+	#core_menu_wrapper .dropdown-menu > li > a { color:#000; text-align:left; line-height:30px; text-shadow: 0 0px 0 rgb(29, 88, 14) !important;}
+
+	
+
+	/*** MOBILE MENU ***/
+
+	#core_menu_wrapper .navbar-toggle { border: 1px solid #6D6D6D; }
+
+	#core_menu_wrapper .navbar-toggle .icon-bar { background:#fff; }
+
+
+
+
+
+/*** BREADCRUMBS ***/
+
+.breadcrumb { background:none; border-radius: 0;padding: 0px; padding-top:10px; padding-bottom:10px; font-weight: normal; color:#fff; }
+
+.breadcrumb li a { color:#fff; }
+
+.breadcrumb i { font-size:10px; top: -1px; padding-right:5px; }
+
+
+
+/*** BODY ***/
+
+#core_padding { }
+
+#core_padding .container {  
+
+
+
+	padding:20px; 
+
+	border: 1px solid #ccc;
+
+	background: white;
+
+	-webkit-border-radius: 4px;
+
+	-moz-border-radius: 4px;
+
+	-ms-border-radius: 4px;
+
+	-o-border-radius: 4px;
+
+	border-radius: 4px; 
+
+ }
+
+ 
+
+	/*** BLOCK STYLES ***/
+
+	.wlt_search_results .thumbnail, .block { background:#fafafa; }
+
+	 .jumbotron, .block .block-title {  padding:10px; margin-bottom:20px; }
+
+	.block .block-title h1, .block .block-title h3 { font-weight:normal;  }
+
+	._searchresultsdata .thumbnail, .block .block-content {  padding:20px; background:#fafafa; }
+
+	.category_object_block .btn-viewall { line-height:50px; }
+
+	
+
+ 	
+
+	/*** GALLERY STYLES ***/
+
+	.wlt_thumbnail { padding:2px; border:1px solid #ccc; }
+
+	.wlt_search_results.list_style .thumbnail { background: #fff; border:0px;   }
+
+	.wlt_search_results.list_style .frame { max-width:320px; }
+
+	.wlt_search_results.list_style .wlt_shortcode_excerpt { font-size:13px; line-height:25px; }
+
+	.wlt_search_results.list_style .btn { float:right; }
+
+	.wlt_search_results.list_style .wlt_starrating { margin-right:10px; margin-top:5px; }
+
+	
+
+	.wlt_search_results.grid_style .thumbnail { padding:10px; }
+
+		
+
+		/*** SEARCH BUTTONS ***/
+
+		#wlt_search_tabs .glyphicon { font-size:12px; }
+
+		.searchresultsnum { font-size: 14px; }
+
+		._searchresults .btn { font-size:18px; margin-bottom:10px; }
+
+	 	._searchresultsdata, ._searchresultsdata .block-content { padding:0px; background:none; border:0px; -moz-border-radius: 0px;	-webkit-border-radius: 0px;	border-radius: 0px;	-moz-box-shadow: 0px 0px 0px rgba(0,0,0,0.15);	
+
+		-webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15); }
+
+		#core_middle_column ._searchresults .block-content { padding-top:0px; }
+
+		#core_middle_column ._searchresultsdata .block-content { background:transparent; padding:0px; }
+
+	
+
+
+
+/*** FOOTER ***/
+
+footer {   }
+
+footer .row { color:#666; margin-bottom:20px;}
+
+	footer a {  color:#ddd; text-decoration:underline; }
+
+footer .row { }
+
+footer .footer-block-title h3 { color:#444; text-transform: uppercase; font-size:18px; }
+
+#footer_bottom { margin-top: 35px; padding: 21px 30px;font-size: 11px;color: #444; background-color: #fff; font-size:14px; }
+
+		
+
+	/*** SOCIAL ICONS ***/
+
+	#footer_bottom ul.socialicons { width:235px; }
+
+	#footer_bottom .socialicons li {  background:#4E8CBD; margin-right:2px;  }
+
+	#footer_bottom .socialicons li a { text-decoration:none; }
+
+ 
+
+/* =============================================================================
+
+  FUNCTION STYLES
+
+   ========================================================================== */
+
+
+
+/*** SLIDER ***/
+
+.wlt_core_slider_two { margin-top:0px; }
+
+.wlt_core_slider_two .sidebox .text_widget { padding-top:30px; }
+
+
+
+/*** NEW BREADCRUMBS WRAPPER ***/
+
+.nbc {
+
+border-top:1px solid #2D5D74;
+
+background: #CDCFD0;
+
+/*box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .25);*/
+
+clear: both;
+
+font-size: 1.083em;
+
+line-height: 17px;
+
+min-height: 33px;
+
+position: relative;
+
+z-index: 203;
+
+-webkit-font-smoothing: antialiased;
+
+} 
+
+
+
+/* =============================================================================
+
+  DEMO STYLES
+
+   ========================================================================== */
+
+.demomode #core_menu_wrapper .navbar .nav > li:nth-child(6){ display:none; }
+
+.demomode #core_menu_wrapper .navbar .nav > li:nth-child(7){ display:none; }
+
+.demomode #core_menu_wrapper .navbar .nav > li:nth-child(8){ display:none; }
+
+.demomode #core_menu_wrapper .navbar .nav > li:nth-child(9){ display:none; }
+
+
+.panel-heading {
+    background-color:#004894 !important;
+    color:white !important;
+}
+.panel {
+    border:0px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

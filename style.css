@@ -78,6 +78,7 @@ header .row {}
 
 #HomeMainBanner {
     background-color:#01365d;
+    margin:0px;
 }
 #HomeMainBanner img{
     margin:auto;

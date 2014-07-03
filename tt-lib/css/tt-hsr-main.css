@@ -1,0 +1,147 @@
+/*tt main css*/
+
+/* Search */
+#search {
+	background: #004a98;
+	border-top: 1px solid #fff;
+	padding: 20px 0;
+	padding: 2rem 0;
+}
+
+#search > .wrap {
+	position: relative;
+}
+#search #IDX-qsCityListWrap-43563,
+#IDX-qsCityListWrap-43563 select {
+	float: left;
+	margin-right: 2%;
+    width:22%;
+}
+#IDX-qsCityListWrap-43563 select {
+    width:100%;
+}
+#search #IDX-qsMinPriceWrap-43563,
+#search #IDX-qsMaxPriceWrap-43563 {
+	float: left;
+	margin-right: 2%;
+	width: 18%;
+}
+
+#search #IDX-qsSubmitWrap-43563,
+#search .IDX-qsInput .IDX-qsButtonInput {
+	float: left;
+	right: 0;
+	bottom: -9px;
+}
+#search #IDX-qsSubmitWrap-43563 {
+    margin-top:27px;
+	font-size: 1.3em;
+}
+#search form {
+	margin: 0;
+	padding: 0;
+}
+
+#search label {
+	color: #fff;
+	display: block;
+	font-size: 16px;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+}
+
+#search input[type="text"],
+#search select {
+	background: #cdcfd0;
+	border: 1px solid #8a8b8c;
+	box-shadow: none;
+	color: #58585a;
+    height:40px;
+    padding:10px;
+}
+
+#search input[type="submit"] {
+	color: #fff;
+	background: #fdb825;
+	width: 100%;
+    height:40px;
+    border:0px;
+    padding:5px 33px;
+}
+
+#search .details {
+	clear: both;
+	color: #a3b4d0;
+	font-size: 12px;
+	font-size: 1.2rem;
+	margin-top: 10px;
+	margin-top: 1rem;
+	width: 100%;
+}
+
+#search .details a {
+	color: #a3b4d0;
+}
+
+#search .advanced {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+#search .advanced {
+	float: left;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	width: 40%;
+}
+
+#search .matches {
+	float: right;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	width: 40%;
+}
+
+/* home page boxes */
+
+#home-boxes img {
+	height: auto;
+	width: 100%;
+}
+
+#home-boxes ul {
+	display: block;
+	list-style: none;
+	margin: 15px 0 0 0;
+	padding: 0;
+}
+
+#home-boxes ul li.hbox-wrap {
+	display: inline-block;
+    padding:0 5px 0 0;
+}
+#home-boxes ul li.hbox-wrap img {
+	background-color: blue;	
+}
+
+
+#home-boxes ul li.hbox-wrap:hover {
+	opacity:0.6;
+	filter:alpha(opacity=60);
+}
+
+#home-boxes h2 {
+	background: #004a98;
+	color: #a3b4d0;
+	display: block;
+	font-size: 18px;
+	font-size: 1.8rem;
+	padding: 10px 0;
+	padding: 1rem 0;
+    margin-top:0px;
+	text-align: center;
+	width: 100%;
+}

@@ -6,6 +6,9 @@
 // TELL THE CORE THIS IS A CHILD THEME
 define('WLT_CHILDTHEME',true);
 
+// TT Functions
+require_once('tt-lib/tt-functions.php');
+
 // INCLUDE GOOGLE FONT
 function _gf(){
 echo "<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>";
@@ -84,6 +87,3 @@ add_action('after_switch_theme','_after_switch_theme');
 if(defined('WLT_DEMOMODE')){
 $GLOBALS['CORE_THEME'] = childtheme_designchanges();
 }
-
-
-// homepage boxes

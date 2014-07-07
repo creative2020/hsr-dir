@@ -76,7 +76,7 @@ hook_container_before(); /* HOOK */ ?>
 ?>
 
 <!-- [WLT] FRAMRWORK // MAIN BODY -->  
-<section id="">
+<section id="page">
 
 <div class="row"><div class="col-md-12">
  

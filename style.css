@@ -80,7 +80,7 @@ header .row {}
 
 #HomeMainBanner {
     background-color:#01365d;
-    margin:0px;
+    margin:-16px 0 0 0;
 }
 #HomeMainBanner img{
     margin:auto;
@@ -111,32 +111,10 @@ header .row {}
 #core_menu_wrapper .navbar { border:0px; padding:0px; padding-left:8.33333333%; padding-right:8.33333333%; overflow:visible;}
 
 #core_menu_wrapper {
-
-background: #bdc2c6;
-
-/*
-background: -moz-linear-gradient(top, #4F8EB1 0%, #417D94 100%);
-
-background: -webkit-linear-gradient(top, #4F8EB1 0%,#417D94 100%);
-
-background: -webkit-gradient(linear, top, bottom, color-stop(0%, #4F8EB1), color-stop(100%, #417D94));
-
-background: -o-linear-gradient(top, #4F8EB1 0%,#417D94 100%);
-
-background: -ms-linear-gradient(top, #4F8EB1 0%,#417D94 100%);
-
-background: linear-gradient(to bottom, #4F8EB1 0%,#417D94 100%);
-
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4F8EB1', endColorstr='#417D94',GradientType=0 );
-*/
-
-border-bottom: 0px solid #004894;
-    
-
-background: #bdc2c6 url('http://homespotrealty.com/wp-content/themes/genesis-hs/images/home-img.png') right no-repeat;
-
-
-
+    background: #bdc2c6;
+    border-bottom: 0px solid #004894;
+    background: #bdc2c6 url('/wp-content/themes/DT_homespot/img/home-img.png') no-repeat;
+    background-position:90% -36px;
 }
 
 #core_menu_wrapper .navbar-nav > li { padding: 20px 0px;   min-width:140px; }
@@ -147,7 +125,16 @@ background: #bdc2c6 url('http://homespotrealty.com/wp-content/themes/genesis-hs/
 
 #core_menu_wrapper .navbar-nav > li.homeli a {  color: #fff; }
 
-#core_menu_wrapper .navbar-nav > li:hover, #core_menu_wrapper .navbar-nav > li.current-menu-item {  }
+#core_menu_wrapper .navbar-nav > li:hover, #core_menu_wrapper .navbar-nav > li.current-menu-item { 
+    background-color:#999999;
+
+}
+
+#core_header {
+    background-image:url(img/home-img.png);
+    background-repeat:no-repeat;
+    background-position:90% 70px;
+}
 
  
 
@@ -315,7 +302,7 @@ footer .footer-block-title h3 { color:#444; text-transform: uppercase; font-size
 
 .nbc {
 
-border-top:1px solid #2D5D74;
+border-top:1px solid #999999;
 
 background: #CDCFD0;
 
@@ -334,10 +321,13 @@ position: relative;
 z-index: 203;
 
 -webkit-font-smoothing: antialiased;
+    
 
 } 
 
-
+#page {
+    margin: 16px 0 0 0;
+}
 
 /* =============================================================================
 
@@ -361,9 +351,15 @@ z-index: 203;
 .panel {
     border:0px !important;
 }
+.footer-block-content {
+    color:white;
+    font-weight:300;
+}
 
-
-
+#core_footer_wrapper {
+    background-color:#01365d;
+    color:white;
+}
 
 
 

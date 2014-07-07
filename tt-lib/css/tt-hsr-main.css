@@ -153,15 +153,82 @@
     margin:16px 0 0 0;
 }
 
+/* Callout */
+#callout {
+	background: #2d7acb;
+	padding: 10px 0;
+	padding: 1rem 0;
+}
 
+#callout p {
+	color: #fff;
+	font-size: 25px;
+	font-size: 2.5rem;
+	letter-spacing: 3px;
+	letter-spacing: 0.3rem;
+	line-height: normal;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
 
+#callout img {
+	max-height: 51px;
+	max-width: 237px;
+	vertical-align: bottom;
+}
+#core_middle_column {
+    padding:0 8.33333333% 0 0;
+    max-width:66%;
+    float:right;
+}
 
+#core_left_column {
+    min-width:33%;
+    padding: 0 0 0 8.33333333%;
+}
+.block {
+    margin:0 !important;
+    padding:0 !important;
+}
 
+.block-title {
+    background-color:#004894 !important;
+    color:white !important;
+    margin: 0 0 0 0 !important;
+}
 
+#core_left_column .block {
+    overflow: hidden;
+    background-color:white;
+}
+#core_left_column .block-content {
+    background-color:#bdc2c6 !important;
+}
+.btn-viewall {
+    color:white !important;
+}
+#core_middle_column .block-content,
+.block ._searchresultsdata .block-content {
+    background-color:white !important;
+    
+}
+._searchresultsdata .block-content {
+    margin:2.0em 0 0 0 !important;
+    padding:0 8.33333333% !important;
+}
+#recentlistings .block-title {
+    padding:0 8.33333333% !important;
+    margin: 2.0em 0 0 0 !important;
+    background-color:white !important;
+    color:black !important;
+}
+.category_object_block .btn-viewall {
+    line-height: normal !important;
+}
 
-
-
-
+#core_footer_wrapper, #footer_content { background:#01365D; border:0px; }
+#core_footer_wrapper, #footer_content, #core_footer_wrapper h3 { color:#ffffff;}
 
 
 

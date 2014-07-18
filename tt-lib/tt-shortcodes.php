@@ -43,7 +43,7 @@ function tt_hsr_search ( $atts ) {
 ?>
     <div id="search">
         <div class="row">
-            <div class="col-md-10 col-md-offset-1">
+            <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
                 <div class="form-group">
             <script charset="UTF-8" type="text/javascript" id="idxwidgetsrc-43563" src="http://realestate.homespotrealty.com/idx/quicksearchjs.php?widgetid=43563"></script>
                 </div>

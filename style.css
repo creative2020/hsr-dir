@@ -5,7 +5,7 @@
  * Author:     Jeff Potts
  * Author URI:   http: //www.2020creative.com
  * Template:    DT
- * Version:    1.0
+ * Version:    1.1
  * GitHub Theme URI: https://github.com/creative2020/hsr-dir
  * GitHub Branch: master
 */ 
@@ -290,32 +290,9 @@ footer .footer-block-title h3 { color:#444; text-transform: uppercase; font-size
 
 
 
-/*** NEW BREADCRUMBS WRAPPER ***/
+/*** NEW BREADCRUMBS WRAPPER - removed by 2020***/
 
-.nbc {
 
-border-top:1px solid #999999;
-
-background: #CDCFD0;
-
-/*box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .25);*/
-
-clear: both;
-
-font-size: 1.083em;
-
-line-height: 17px;
-
-min-height: 33px;
-
-position: relative;
-
-z-index: 203;
-
--webkit-font-smoothing: antialiased;
-    
-
-} 
 
 #page {
     margin: 16px 0 0 0;

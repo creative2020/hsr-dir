@@ -119,9 +119,27 @@ function tt_hsr_qsearch ( $atts ) {
 
 ////////////////////////////////////////////////////////
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////// hsr buttons
+add_shortcode( 'button', 'button_shortcode' );
+function button_shortcode($atts, $content = null) {
+    extract(shortcode_atts(array(
+        'size'   => 'small',
+        'color'  => 'nil',
+        'block'  => 0,
+        'url'    => '#',
+        'target'    => '',
+    ), $atts ) );
 
+    $classes = 'btn btn-' . $size . ' btn-' . $color;
 
+    if ($block) {
+    	$classes .= ' btn-block';
+    }
 
+    return '<a class="' . $classes . '" href="' . $url . '" target="' . $target . '">' . $content . '</a>';
+}
+
+////////////////////////////////////////////////////////
 
 
 

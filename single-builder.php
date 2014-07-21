@@ -266,7 +266,7 @@ Storing big pictures above
             
             
         </div>
-     </div>
+     
 
 
 <?php

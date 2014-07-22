@@ -43,7 +43,7 @@ function tt_hsr_search ( $atts ) {
 ?>
     <div id="search">
         <div class="row">
-            <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
                 <div class="form-group">
             <script charset="UTF-8" type="text/javascript" id="idxwidgetsrc-43563" src="http://realestate.homespotrealty.com/idx/quicksearchjs.php?widgetid=43563"></script>
                 </div>
@@ -107,8 +107,8 @@ function tt_hsr_qsearch ( $atts ) {
         <div class="row">
             <div class="col-md-12">
                 <div id="callout">
-      <div class="col-med-10 col-md-offset-1">
-	    <p>Looking for more KC Homes? <a href="http://realestate.homespotrealty.com/idx/search/advanced"><img src="/wp-content/themes/DT_homespot/img/callout_btn.png" alt=""></a> now</p>
+      <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1">
+	    <p><span class="hidden-xs">Looking for more KC Homes? </span><a href="http://realestate.homespotrealty.com/idx/search/advanced"><img src="/wp-content/themes/DT_homespot/img/callout_btn.png" alt=""></a><span class="hidden-xs">now</span></p>
       </div>
     </div>
             </div>    

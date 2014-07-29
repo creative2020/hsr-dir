@@ -378,7 +378,7 @@ and (max-width : 768px) {
     padding:0 !important;
 }
 .wlt_search_results.list_style .thumbnail .frame img {
-    min-width:200px !important;
+    width:200px;
 }
 #wlt_smalldevicemenubar {
     padding:1.0em 8.33333333% !important;
@@ -395,6 +395,61 @@ and (max-width : 768px) {
     color:#004a98 !important;
     padding-left:1.0em !important;
     background-color:transparent !important;
+}
+
+.wlt_thumbnail {
+    padding: 0px !important;
+    border: 0px solid #ccc !important;
+}
+.wlt_search_results.grid_style .frame {
+    width: 100%;
+    background: #fff;
+    padding: 0 !important;
+}
+.item .thumbnail {
+    background-color:#F2F2F2  !important;
+    border-color: #cdcfd0 !important;
+}
+.wlt_search_results.grid_style .item.featured .thumbnail {
+    color: #01365d !important;
+    background-color:#004894 !important;
+    border-color: #01365d !important;
+}
+.wlt_search_results.list_style .item.featured .thumbnail {
+    color: #01365d !important;
+    background-color:#F2F2F2 !important;
+    border-color: #004894 !important;
+}
+.wlt_search_results.list_style .item.featured .thumbnail:hover,
+.wlt_search_results.list_style .item .thumbnail:hover,
+.wlt_search_results.grid_style .item.featured .thumbnail:hover,
+.wlt_search_results.grid_style .item .thumbnail:hover{
+    background-color:#fbb12f !important;
+    border-color: #fbb12f !important;
+}
+.wlt_search_results.grid_style .frame {
+    width: 100%;
+    height:110px;
+    overflow:hidden;
+    background: transparent;
+    padding: 0 !important;
+}
+.wlt_search_results.grid_style .thumbnail .frame img {
+    max-width: 100%;
+    width: 100%;
+}
+.wlt_search_results.grid_style .item.featured h1 a {
+    color: #ffffff;
+}
+.wlt_search_results.list_style .item.featured h1 a {
+    color: #01365d;
+}
+.item.featured h1 a:hover,
+.item h1 a:hover{
+    text-decoration:none;
+}
+.wlt_search_results.grid_style h1 {
+    padding-top: 8px;
 }
 
 .srp-widget-singlepost {
@@ -458,10 +513,26 @@ h4.media-heading {
     margin:0px !important;
 }
 
+/*Buttons*/
+.btn {
+    border:0px !important;
+}
+.btn:hover {
+    background-color:#fbb12f !important;
+}
 
+.addthis_toolbox {
+    display:block;
+}
+.rule {
+    margin:1.0em 0;
+    border-bottom:1px solid #bdc2c6;
+}
 
-
-
+.fb-img-wrap {
+    height:110px;
+    overflow:hidden;
+}
 
 
 

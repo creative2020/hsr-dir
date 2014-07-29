@@ -68,16 +68,17 @@ function tt_hsr_lp_boxes ( $atts ) {
 		), $atts )
 	);
     
+    
 ?>
     <div id="home-boxes">
         <div class="row">
             <div class="col-md-12 col-xs-10 col-xs-offset-1">
                 <ul>
-                    <li class="col-md-2 col-md-offset-0 col-sm-6 col-xs-12 hbox-wrap"><a href="#"><img src="http://homespotrealty.com/wp-content/uploads/2013/09/leawood-city-hall-2_300px.jpg"><h2>Title Here</h2></a></li>
-                    <li class="col-md-2 col-xs-6 hbox-wrap"><a href="#"><img src="http://homespotrealty.com/wp-content/uploads/2013/09/leawood-city-hall-2_300px.jpg"><h2>Title Here</h2></a></li>
-                    <li class="col-md-2 col-xs-6 hbox-wrap"><a href="#"><img src="http://homespotrealty.com/wp-content/uploads/2013/09/leawood-city-hall-2_300px.jpg"><h2>Title Here</h2></a></li>
-                    <li class="col-md-2 col-xs-6 hbox-wrap"><a href="#"><img src="http://homespotrealty.com/wp-content/uploads/2013/09/leawood-city-hall-2_300px.jpg"><h2>Title Here</h2></a></li>
-                    <li class="col-md-2 col-xs-6 hbox-wrap"><a href="#"><img src="http://homespotrealty.com/wp-content/uploads/2013/09/leawood-city-hall-2_300px.jpg"><h2>Title Here</h2></a></li>
+                    <li class="col-md-2 col-md-offset-0 col-sm-6 col-xs-12 hbox-wrap"><a href=http://"<?php the_field('box1_link','options'); ?>"><div class="fb-img-wrap"><img src="<?php the_field('box1_image','options'); ?>"></div><h2><?php the_field('box1_headline','options'); ?></h2></a></li>
+                    <li class="col-md-2 col-md-offset-0 col-sm-6 col-xs-12 hbox-wrap"><a href=http://"<?php the_field('box2_link','options'); ?>"><div class="fb-img-wrap"><img src="<?php the_field('box2_image','options'); ?>"></div><h2><?php the_field('box2_headline','options'); ?></h2></a></li>
+                    <li class="col-md-2 col-md-offset-0 col-sm-6 col-xs-12 hbox-wrap"><a href=http://"<?php the_field('box3_link','options'); ?>"><div class="fb-img-wrap"><img src="<?php the_field('box3_image','options'); ?>"></div><h2><?php the_field('box3_headline','options'); ?></h2></a></li>
+                    <li class="col-md-2 col-md-offset-0 col-sm-6 col-xs-12 hbox-wrap"><a href=http://"<?php the_field('box4_link','options'); ?>"><div class="fb-img-wrap"><img src="<?php the_field('box4_image','options'); ?>"></div><h2><?php the_field('box4_headline','options'); ?></h2></a></li>
+                    <li class="col-md-2 col-md-offset-0 col-sm-6 col-xs-12 hbox-wrap"><a href=http://"<?php the_field('box5_link','options'); ?>"><div class="fb-img-wrap"><img src="<?php the_field('box5_image','options'); ?>"></div><h2><?php the_field('box5_headline','options'); ?></h2></a></li>
                     
                 
                 </ul>
@@ -139,13 +140,50 @@ function button_shortcode($atts, $content = null) {
     return '<a class="' . $classes . '" href="' . $url . '" target="' . $target . '">' . $content . '</a>';
 }
 
+//////////////////////////////////////////////////////// button
+
+add_shortcode( 'hsr_btn', 'hsr_btn1' );
+function hsr_btn1($atts, $content = null) {
+    extract(shortcode_atts(array(
+        'size'   => '',
+        'color'  => '#003764', //#003764
+        'fcolor'  => '#ffffff', //#ffffff
+        'link'    => '#',
+        'float'    => 'none',
+        'target'    => '',
+    ), $atts ) );
+
+    $classes = 'btn btn-default btn-' . $size;
+
+    return '<button type="button" class="' . $classes . '" href="' . $link . '" style="background:' . $color . ';color:'. $fcolor . ';float:' . $float . ';margin:0.5em 0.5em 0.5em 0 !important;" target="' . $target . '">' . $content . '</button>';
+}
+
 ////////////////////////////////////////////////////////
 
+add_shortcode( 'rule', 'rule' );
+function rule($atts, $content = null) {
+    extract(shortcode_atts(array(
+        'size'   => '1px',
+        'color'  => '#bdc2c6',
+    ), $atts ) );
 
+    $classes = 'rule';
 
+    return '<div class="' . $classes . '" style"border:' . $size . ' solid ' . $color .';"></div>';
+}
 
+////////////////////////////////////////////////////////
 
+add_shortcode( 'print_info', 'print_info' );
+function print_info($atts, $content = null) {
+    extract(shortcode_atts(array(
+        'type'   => '',
+    ), $atts ) );
 
-
-
+    $categories = get_the_category();
+    $tags = get_the_tags();
+    
+    print_r($categories);
+    print_r($tags);
+}
 

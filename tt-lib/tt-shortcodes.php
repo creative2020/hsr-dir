@@ -74,11 +74,11 @@ function tt_hsr_lp_boxes ( $atts ) {
         <div class="row">
             <div class="col-md-12 col-xs-10 col-xs-offset-1">
                 <ul>
-                    <li class="col-md-2 col-md-offset-0 col-sm-6 col-xs-12 hbox-wrap"><a href=http://"<?php the_field('box1_link','options'); ?>"><div class="fb-img-wrap"><img src="<?php the_field('box1_image','options'); ?>"></div><h2><?php the_field('box1_headline','options'); ?></h2></a></li>
-                    <li class="col-md-2 col-md-offset-0 col-sm-6 col-xs-12 hbox-wrap"><a href=http://"<?php the_field('box2_link','options'); ?>"><div class="fb-img-wrap"><img src="<?php the_field('box2_image','options'); ?>"></div><h2><?php the_field('box2_headline','options'); ?></h2></a></li>
-                    <li class="col-md-2 col-md-offset-0 col-sm-6 col-xs-12 hbox-wrap"><a href=http://"<?php the_field('box3_link','options'); ?>"><div class="fb-img-wrap"><img src="<?php the_field('box3_image','options'); ?>"></div><h2><?php the_field('box3_headline','options'); ?></h2></a></li>
-                    <li class="col-md-2 col-md-offset-0 col-sm-6 col-xs-12 hbox-wrap"><a href=http://"<?php the_field('box4_link','options'); ?>"><div class="fb-img-wrap"><img src="<?php the_field('box4_image','options'); ?>"></div><h2><?php the_field('box4_headline','options'); ?></h2></a></li>
-                    <li class="col-md-2 col-md-offset-0 col-sm-6 col-xs-12 hbox-wrap"><a href=http://"<?php the_field('box5_link','options'); ?>"><div class="fb-img-wrap"><img src="<?php the_field('box5_image','options'); ?>"></div><h2><?php the_field('box5_headline','options'); ?></h2></a></li>
+                    <li class="col-md-2 col-md-offset-0 col-sm-6 col-xs-12 hbox-wrap"><a href="http://<?php the_field('box1_link','options'); ?>"><div class="fb-img-wrap"><img src="<?php the_field('box1_image','options'); ?>"></div><h2><?php the_field('box1_headline','options'); ?></h2></a></li>
+                    <li class="col-md-2 col-md-offset-0 col-sm-6 col-xs-12 hbox-wrap"><a href="http://<?php the_field('box2_link','options'); ?>"><div class="fb-img-wrap"><img src="<?php the_field('box2_image','options'); ?>"></div><h2><?php the_field('box2_headline','options'); ?></h2></a></li>
+                    <li class="col-md-2 col-md-offset-0 col-sm-6 col-xs-12 hbox-wrap"><a href="http://<?php the_field('box3_link','options'); ?>"><div class="fb-img-wrap"><img src="<?php the_field('box3_image','options'); ?>"></div><h2><?php the_field('box3_headline','options'); ?></h2></a></li>
+                    <li class="col-md-2 col-md-offset-0 col-sm-6 col-xs-12 hbox-wrap"><a href="http://<?php the_field('box4_link','options'); ?>"><div class="fb-img-wrap"><img src="<?php the_field('box4_image','options'); ?>"></div><h2><?php the_field('box4_headline','options'); ?></h2></a></li>
+                    <li class="col-md-2 col-md-offset-0 col-sm-6 col-xs-12 hbox-wrap"><a href="http://<?php the_field('box5_link','options'); ?>"><div class="fb-img-wrap"><img src="<?php the_field('box5_image','options'); ?>"></div><h2><?php the_field('box5_headline','options'); ?></h2></a></li>
                     
                 
                 </ul>

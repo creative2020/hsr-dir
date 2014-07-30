@@ -16,7 +16,52 @@ require_once ('plugins/github-updater/github-updater.php');
 require_once ('tt-shortcodes.php');
 
 // CPT's
-// require_once ('tt-cpt.php');
+//require_once ('tt-cpt.php');
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////// Taxonomies
+
+// Register Custom Taxonomy
+
+if ( ! function_exists( 'tt_taxonomy_area' ) ) {
+
+// Register Custom Taxonomy
+function tt_taxonomy_area() {
+
+	$labels = array(
+		'name'                       => 'locations', // plural name
+		'singular_name'              => 'location', // singular name
+		'menu_name'                  => 'Locations',
+		'all_items'                  => 'All Items',
+		'parent_item'                => 'Parent Item',
+		'parent_item_colon'          => 'Parent Item:',
+		'new_item_name'              => 'New Item Name',
+		'add_new_item'               => 'Add New Item',
+		'edit_item'                  => 'Edit Item',
+		'update_item'                => 'Update Item',
+		'separate_items_with_commas' => 'Separate items with commas',
+		'search_items'               => 'Search Items',
+		'add_or_remove_items'        => 'Add or remove items',
+		'choose_from_most_used'      => 'Choose from the most used items',
+		'not_found'                  => 'Not Found',
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => true,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => true,
+		'rewrite'                    => false,
+	);
+	register_taxonomy( 'location', array( 'listing_type' ), $args );
+
+}
+
+// Hook into the 'init' action
+add_action( 'init', 'tt_taxonomy_area', 0 );
+
+}
 
 //////////////////////////////////////////////////////// Add shortcode functionality to text widgets
 

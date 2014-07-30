@@ -4,7 +4,7 @@ Author: 2020 Creative
 URL: htp://2020creative.com
 Requirements: php5.5.*
 */
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////// 2020 CPT's
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////// 2020 CPT's and Taxonomies
 
 namespace TwentyTwenty\TTcpt;
 
@@ -77,19 +77,22 @@ class ContentType {
         );
     }
 }
-$tt_cpt = new ContentType('tt_cpt', array(), array('plural_name' => 'tt_cpt'));
+//$tt_cpt = new ContentType('tt_cpt', array(), array('plural_name' => 'tt_cpt'));
 
     
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////// Taxonomies
 
-/*
 // Register Custom Taxonomy
-function taxhelp() {
+
+if ( ! function_exists( 'tt_taxonomy_area' ) ) {
+
+// Register Custom Taxonomy
+function tt_taxonomy_area() {
 
 	$labels = array(
-		'name'                       => 'Help and FAQ\'s',
-		'singular_name'              => 'Help and FAQ',
-		'menu_name'                  => 'Help and FAQ',
+		'name'                       => 'locations',
+		'singular_name'              => 'location',
+		'menu_name'                  => 'Locations',
 		'all_items'                  => 'All Items',
 		'parent_item'                => 'Parent Item',
 		'parent_item_colon'          => 'Parent Item:',
@@ -103,11 +106,6 @@ function taxhelp() {
 		'choose_from_most_used'      => 'Choose from the most used items',
 		'not_found'                  => 'Not Found',
 	);
-	$rewrite = array(
-		'slug'                       => 'help',
-		'with_front'                 => true,
-		'hierarchical'               => false,
-	);
 	$args = array(
 		'labels'                     => $labels,
 		'hierarchical'               => true,
@@ -116,17 +114,17 @@ function taxhelp() {
 		'show_admin_column'          => true,
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
-		'rewrite'                    => $rewrite,
+		'rewrite'                    => false,
 	);
-	register_taxonomy( 'taxhelp', array( 'faq' ), $args );
+	register_taxonomy( 'location', array( 'listing_type' ), $args );
 
 }
 
 // Hook into the 'init' action
-add_action( 'init', 'help', 0 );    
-*/
-    
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+add_action( 'init', 'tt_taxonomy_area', 0 );
+
+}
+   
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////// Roles
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////// Client role
@@ -142,40 +140,6 @@ add_role( 'tt_client', 'Client', $capabilities );
     
 }
 //add_action( 'init', 'tt_role_client', 0 ); // not working ??
-tt_role_client (); 
+//tt_role_client (); 
 
 ////////////////////////////////////////////////////////
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    

@@ -195,6 +195,19 @@ function city_info($atts, $content = null) {
     extract(shortcode_atts(array(
         'name'   => '',
     ), $atts ) );
+    
+    
+    $args = array(
+	'post_type' => 'listing_type',
+	'tax_query' => array(
+		array(
+			'taxonomy' => 'area',
+			'field' => 'slug',
+			'terms' => ''
+		)
+	)
+);
+$query = new WP_Query( $args );
 
     $output = 'hello';
     $price_link_1_label = get_field('price_link_1_label');
@@ -206,10 +219,7 @@ function city_info($atts, $content = null) {
     <div id="city-widget">
         <div class="row">
             <div class="col-md-12">
-            <h4 class="rule">Homes for sale by price</h4>
-                <a type="button" class="btn btn-primary btn-block btn-hsr-2" href="' . $price_link_1 .'" role="button">' . $price_link_1_label .'</a>
-                <a type="button" class="btn btn-primary btn-block btn-hsr-2" href="' . $price_link_1 .'" role="button">' . $price_link_2_label .'</a>
-                
+                            
                 <h4 class="rule">by subdivision</h4>
                 <div class="btn-group">
                   <button type="button" class="btn btn-primary btn-hsr-2">A-F</button>

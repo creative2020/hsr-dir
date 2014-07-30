@@ -14,15 +14,15 @@
 
 /*** LINKS ***/
 
-a { color: #474646 }
+a { color: #01365d }
 
 
 
 /*** BUTTONS ***/
 
-.btn-primary { background-image:none; background: #515151; border-color:#515151;  }
+.btn-primary { background-image:none; background: #004894; border-color:#004894;  }
 
-.btn-primary:focus, .btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] { color: white; background-color: #606060;}	
+.btn-primary:focus, .btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] { color: white; background-color: #fbb12f;}	
 
 
 

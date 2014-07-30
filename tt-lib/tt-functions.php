@@ -18,6 +18,10 @@ require_once ('tt-shortcodes.php');
 // CPT's
 // require_once ('tt-cpt.php');
 
+//////////////////////////////////////////////////////// Add shortcode functionality to text widgets
+
+add_filter('widget_text', 'do_shortcode');
+
 ////////////////////////////////////////////////////////
 
 if(function_exists('acf_add_options_page')) { 

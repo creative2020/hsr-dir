@@ -187,3 +187,46 @@ function print_info($atts, $content = null) {
     print_r($tags);
 }
 
+////////////////////////////////////////////////////////
+
+add_shortcode( 'city_info', 'city_info' );
+
+function city_info($atts, $content = null) {
+    extract(shortcode_atts(array(
+        'name'   => '',
+    ), $atts ) );
+
+    $output = 'hello';
+    $price_link_1_label = get_field('price_link_1_label');
+    $price_link_1 = get_field('price_link_1');
+    $price_link_2_label = get_field('price_link_2_label');
+    $price_link_2 = get_field('price_link_2');
+     
+    $output = '
+    <div id="city-widget">
+        <div class="row">
+            <div class="col-md-12">
+            <h4 class="rule">Homes for sale by price</h4>
+                <a type="button" class="btn btn-primary btn-block btn-hsr-2" href="' . $price_link_1 .'" role="button">' . $price_link_1_label .'</a>
+                <a type="button" class="btn btn-primary btn-block btn-hsr-2" href="' . $price_link_1 .'" role="button">' . $price_link_2_label .'</a>
+                
+                <h4 class="rule">by subdivision</h4>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary btn-hsr-2">A-F</button>
+                  <button type="button" class="btn btn-primary">G-K</button>
+                  <button type="button" class="btn btn-primary">L-O</button>
+                  <button type="button" class="btn btn-primary">P-T</button>
+                  <button type="button" class="btn btn-primary">U-Z</button>
+                </div>
+                
+            </div>    
+        </div>
+    </div>';
+
+
+
+    return $output;
+
+}
+
+////////////////////////////////////////////////////////

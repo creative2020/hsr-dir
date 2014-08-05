@@ -151,11 +151,12 @@ function hsr_btn1($atts, $content = null) {
         'link'    => '#',
         'float'    => 'none',
         'target'    => '',
+        'class' => '',
     ), $atts ) );
 
-    $classes = 'btn btn-default btn-' . $size;
+    $classes = 'btn btn-default ' . $class . ' btn-' . $size;
 
-    return '<button type="button" class="' . $classes . '" href="' . $link . '" style="background:' . $color . ';color:'. $fcolor . ';float:' . $float . ';margin:0.5em 0.5em 0.5em 0 !important;" target="' . $target . '">' . $content . '</button>';
+    return '<a type="button" class="' . $classes . '" href="' . $link . '" style="background:' . $color . ';color:'. $fcolor . ';float:' . $float . ';margin:0.5em 0.5em 0.5em 0 !important;" target="' . $target . '">' . $content . '</a>';
 }
 
 ////////////////////////////////////////////////////////
@@ -240,3 +241,94 @@ $query = new WP_Query( $args );
 }
 
 ////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////// 2020 /////////////////////////////////////////////////////////////////
+// 2020 Typography Shortcodes
+function HsBreak($atts, $content = null) {
+   extract(shortcode_atts(array(
+       'link' => '#',
+       'bgcolor' => '#fdb825',
+       'name' => 'HS',
+   ), $atts));
+   return '<div class="hs-callout">' . $name . '</div>' . '<div class="hs-break">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('hs-break', 'HsBreak');
+
+// Shortcode HS BREAK 2
+function HsBreak2($atts, $content = null) {
+   extract(shortcode_atts(array(
+       'link' => '#',
+       'bgcolor' => '#fdb825',
+       'name' => 'HS',
+   ), $atts));
+   return '<div class="hs-callout2">' . $name . '</div>' . '<div class="hs-break2">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('hs-break2', 'HsBreak2');
+// end
+function HsText1($atts, $content = null) {
+   extract(shortcode_atts(array(
+       'link' => '#',
+       'color' => '#333333',
+       'bgcolor' => '',
+   ), $atts));
+   return '<div class="hs-text1" style=color:' . $color . ';background-color:' . $bgcolor . '>' . do_shortcode($content) . '</div>';
+}
+add_shortcode('hs-text1', 'HsText1');
+
+function HsTextC1($atts, $content = null) {
+   extract(shortcode_atts(array(
+       'link' => '#',
+       'color' => '#333333',
+       'bgcolor' => '#cccccc',
+   ), $atts));
+   return '<div class="hs-text-c1" style=color:' . $color . ';background-color:' . $bgcolor . '>' . do_shortcode($content) . '</div>';
+}
+add_shortcode('hs-text-c1', 'HsTextC1');
+
+function HsTextH1($atts, $content = null) {
+   extract(shortcode_atts(array(
+       'link' => '#',
+       'color' => '#003764',
+       'bgcolor' => '',
+   ), $atts));
+   return '<div class="hs-h1" style=color:' . $color . ';background-color:' . $bgcolor . '>' . do_shortcode($content) . '</div>';
+}
+add_shortcode('hs-h1', 'HsTextH1');
+
+// Shortcode for credentials
+function Credentials($atts, $content = null) {
+   extract(shortcode_atts(array(
+       'link' => '',
+       'color' => '#003764',
+       'bgcolor' => '',
+       'img' => '',
+       'title' => '',
+   ), $atts));
+   return '<div class="cred-wrap"><div class="cred-img"><img src="' . $img .'" width="50"></div><div class="cred-info"><div class="hsr-cred-title" style=color:' . $color . ';><a href="' . $link .'">' . $title . '</a></div><div class="hsr-cred-text" background-color:' . $bgcolor . '>' . do_shortcode($content) . '</div></div></div>';
+}
+add_shortcode('creds', 'Credentials');
+
+// Add shortcode for Area Information [area_info]
+
+add_shortcode('area_info', 'area_info_field');
+function area_info_field() {
+        global $post;
+        $area_true = get_post_meta($post->ID, "neighborhood_area_info", true);
+        
+    if ($area_true == 1) {
+        return 'Area';
+    }
+}
+// Add shortcode for Area Information [area_info_full]
+add_shortcode('area_info_full', 'area_info_full1');
+function area_info_full1() {
+        global $post;
+        
+        $area_true = get_post_meta($post->ID, "neighborhood_area_info", true);
+        
+    if ($area_true == 1) {
+        return '<div class="AreaFull"><a href="' . get_permalink($post->ID) . '">Area</a></div';
+        }               
+        return '<div class="' . get_post_meta($post->ID, "neighborhood_area_info.name", true) . 'Full"><a href="' . get_permalink($post->ID) . '"></a></div>';
+         
+}

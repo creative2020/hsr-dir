@@ -1,5 +1,18 @@
 /*tt main css*/
 
+#core_header {
+    background-color:#e9e6e6;
+}
+
+#core_header_navigation .navbar .nav > li > a, #core_menu_wrapper .navbar .nav > li > a {
+    color:#313133;
+    font-weight:300;
+    text-transform: capitalize;
+}
+#core_header_navigation .navbar .nav > li > a, #core_menu_wrapper .navbar .nav > li > a:hover {
+    color:#fff;
+}
+
 /* Search - homepage */
 #search {
 	background: #004a98;
@@ -23,35 +36,37 @@
 }
 #search #IDX-qsMinPriceWrap-43563,
 #search #IDX-qsMaxPriceWrap-43563 {
-	float: left;
+	float: left !important;
 	margin-right: 2%;
-	width:15%;
+	width:15% !important;
 }
 #search #IDX-qsCityListWrap-43563,
 #IDX-qsCityListWrap-43563 select {
-	float: left;
-	margin-right: 2%;
-    width:30%;
+	float: left !important;
+	margin-right: 2% !important;
+    width:30% !important;
 }
 #IDX-qsCityListWrap-43563 select {
-    width:100%;
+    width:100% !important;
 }
 #search #IDX-qsSubmitWrap-43563,
 #search .IDX-qsInput .IDX-qsButtonInput {
-	float: left;
-	right: 0;
-	bottom: -9px;
+	float: left !important;
+	right: 0 !important;
+	bottom: -9px !important;
 }
 #search #IDX-qsSubmitWrap-43563 {
-    float:right;
-    margin-top:27px;
-	font-size: 1.3em;
+    float:right !important;
+    margin-top:26px !important;
+	font-size: 1.3em !important;
+    width:25% !important;
+    height:40px !important;
 }
 #search input[type="submit"] {
 	color: #fff;
 	background: #fdb825;
 	width: 100%;
-    height:40px;
+    height:40px !important;
     border:0px;
     padding:5px 33px;
 }
@@ -61,6 +76,7 @@
 	font-size: 1.0em;
 	font-size: 1.6rem;
 	text-transform: uppercase;
+    float:left !important;
 }
 #search input[type="text"],
 #search select {
@@ -68,7 +84,7 @@
 	border: 1px solid #8a8b8c;
 	box-shadow: none;
 	color: #58585a;
-    height:40px;
+    height:40px !important;
     padding:10px;
 }
 /* Search - mobile ------------------------START------------------- */
@@ -122,15 +138,14 @@ and (max-width : 768px) {
     float:none !important;
     margin-top:27px;
 	font-size: 1.3em;
+	width: 100% !important;
 }
 #search input[type="submit"] {
 	color: #fff;
 	background: #fdb825;
-	width: 100%;
     height:40px;
     border:0px;
     padding:5px 33px;
-    border:1px solid green !important;
 }
 #search label {
 	color: #fff;
@@ -156,7 +171,7 @@ and (max-width : 768px) {
 .IDX-quicksearchWrapper {
     width: 100% !important;
 }
-#IDX-quicksearch-52147 {
+.IDX-quicksearchWrapper {
     border-radius: 0px !important;
     -webkit-border-radius: 0px !important;
     border: 0px solid red !important;
@@ -165,6 +180,7 @@ and (max-width : 768px) {
 }
 .IDX-qsFieldWrap {
     padding:0px !important;
+    width:100% !important;
 }
 .IDX-quicksearchWrapper input[type="submit"] {
     background-color:#01365d !important;
@@ -172,13 +188,43 @@ and (max-width : 768px) {
     border-radius:0.4em;
     color:white;
 }
-#IDX-quicksearchForm-52147 .IDX-qsInput {
+.IDX-qsInput {
     margin: 0.5em 0 0 0 !important;
 }
 .IDX-quicksearchWrapper .IDX-qsButtonInput:hover {
     border:1px solid #fbb12f !important;
     background-color:#fbb12f !important;
 }
+
+#IDX-qsSubmitWrap-52155 {
+    margin:0px !important;
+    width:25% !important;
+    float:right !important;
+}
+#IDX-qsSubmitWrap-52155 input[type="submit"] {
+    
+}
+#IDX-qsMaxPriceWrap-52155 {
+    margin: 0 0 1.0em 0 !important;
+}
+.IDX-qsSelectInput {
+    background-color:#01365d;
+    border:0px solid green;
+    height:2.5em !important;
+    width:200px;
+}
+.IDX-qsSelectInput a {
+   color:#fff !important;
+}
+#IDX-qsCityListWrap-52155 {
+    width:70% !important;
+    float:left !important;
+    color:#fff !important;
+}
+#IDX-qsSubmit-52155 {
+    float: right !important;
+}
+
 
 
 /* home page boxes */
@@ -226,7 +272,32 @@ and (max-width : 768px) {
     padding:0 8.33333333% 0 8.33333333% !important;
 }
 .block .block-title {
-    margin:16px 0 0 0;
+    height:3.3em !important;
+    overflow:hidden;
+    margin:0.5em 0 0 0 !important;
+    font-weight:400;
+    text-transform:capitalize;
+    padding: 1.5em 0 0 1.5em !important;
+}
+.block-title h1, .block .block-title h3 {
+    font-size: 1.7em;
+    line-height: 30px;
+    padding: 0 0 0 0px;
+    margin: 0px !important;
+    text-transform: capitalize;
+    font-weight:200 !important;
+    font-stretch:normal !important;
+    color:#bdc2c6;
+}
+#core_right_column .block .block-title {
+    background: #004894 url('/wp-content/themes/DT_homespot/img/mark-20k.png') no-repeat;
+    background-size:55px;
+    background-position:90% 22px;
+}
+
+._searchresultsdata .thumbnail, .block .block-content {
+    padding: 20px;
+    background: #cbccce !important;
 }
 
 /* Callout */
@@ -323,13 +394,43 @@ and (max-width : 768px) {
 #footer_bottom {
     padding:2.0em 7% 2.0em 7% !important;
 }
+.IDX-showcaseContainer, .IDX-showcaseTable {
+    width:97% !important;
+    padding:0 !important;
+}
 .IDX-showcaseCell {
-    min-width:55px !important;
+    width:100% !important;
+    border:0px !important;
 }
-.IDX-showcaseGallery-47975 {
-    margin-left:-12px !important;
-    padding-left:0 !important;
+IDX-showcaseGallery-47975 {
+    margin:0 !important;
+    padding:0 !important;
+    width:100% !important;
 }
+.IDX-showcasePhoto {
+    width:100% !important;
+}
+#IDX-showcaseGallery-47975 .IDX-showcaseCell {
+    width: 100% !imnportant;
+    vertical-align: top;
+    display: inline-block !important;
+    margin-bottom: 1.0em;
+}
+.IDX-showcaseRow {
+    width:100% !important;
+    margin: 0 0 0 0 !important;
+    background-color:#fff !important;
+    padding:0.5em !important;
+}
+.IDX-showcaseCityStateZip {
+    float:left !important;
+}
+.IDX-showcaseAddress {
+    font-size:1.5em !important;
+}
+.IDX-showcasePrice {
+    color:#01365d !important;
+    float:right !important;
 
 .nbc {
     display:block;
@@ -525,7 +626,65 @@ h4.media-heading {
     overflow:hidden;
 }
 
-
+/* Shortcode CSS */
+.hs-break {
+    color:#003764;
+    font-size:2.0em;
+    width:100%;
+    margin:8px 16px 8px 32px;
+    padding:8px 0 0 16px;
+    border-bottom:solid 2px #003764;
+    height:66px;
+}
+.hs-callout {
+    text-align:center;
+    color:#fff;
+    font-size:3.5em;
+    padding-top:12px;
+    margin:16px 32px 0 16px;
+    float:left;
+    border-radius: 120px;
+    width:100px !important;
+    height:100px;
+    display:block;
+    background-color:#fdb825;
+    }
+.hs-break2 {
+    color:#003764;
+    font-size:2.0em;
+    width:100%;
+    margin:8px 16px 8px 32px;
+    padding:8px 0 0 16px;
+    border-bottom:solid 2px #003764;
+    height:66px;
+}
+.hs-callout2 {
+    text-align:center;
+    color:#fff;
+    font-size:2.0em;
+    margin:8px 32px 0 0;
+    float:left;
+    border-radius: 120px;
+    width:66px !important;
+    height:66px;
+    display:block;
+    background-color:#fdb825;
+    padding-top: 6px;
+    }
+.hs-text1 {
+    margin:0 0 0 150px;
+}   
+.hs-text-c1 {
+    margin:16px;
+    padding:32px;
+    background-color:#cccccc;
+}
+.hs-h1 {
+    color:#003764;
+    font-size:2.0em;
+    margin:8px 16px 8px 0;
+    padding:8px 0 0 0;
+}
 
 
 

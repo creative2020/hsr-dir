@@ -108,10 +108,40 @@ function tt_hsr_qsearch ( $atts ) {
         <div class="row">
             <div class="col-md-12">
                 <div id="callout">
-      <div class="col-xs-10 col-xs-offset-1 col-md-10 col-md-offset-1">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-12">
 	    <p><span class="hidden-xs">Looking for more KC Homes? </span><a href="http://realestate.homespotrealty.com/idx/search/advanced"><img src="/wp-content/themes/DT_homespot/img/callout_btn.png" alt=""></a><span class="hidden-xs">now</span></p>
       </div>
     </div>
+            </div>    
+        </div>
+    </div>
+
+<?php }
+
+////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////// TT homepage break
+
+add_shortcode( 'tt_hsr_hp_break', 'tt_hsr_hp_break' );
+function tt_hsr_hp_break ( $atts ) {
+
+	// Attributes
+	extract( shortcode_atts(
+		array(
+			'name' => '',
+            'id' => '',
+		), $atts )
+	);
+    
+?>
+    <div id="hp-message">
+        <div class="row">
+            <div class="col-md-12">
+                
+      <div class="hp-break col-xs-10 col-xs-offset-1">
+	    <h3><?php the_field('hp_message','options'); ?></h3>
+      </div>
+    
             </div>    
         </div>
     </div>
@@ -141,6 +171,8 @@ function button_shortcode($atts, $content = null) {
 }
 
 //////////////////////////////////////////////////////// button
+
+// [hsr_btn size="lg" link="#" color="#003764" fcolor="#ffffff" float="none" target="" class=""]Button Name[/hsr_btn], homes_for_sale_btn
 
 add_shortcode( 'hsr_btn', 'hsr_btn1' );
 function hsr_btn1($atts, $content = null) {
@@ -172,6 +204,35 @@ function rule($atts, $content = null) {
 
     return '<div class="' . $classes . '" style"border:' . $size . ' solid ' . $color .';"></div>';
 }
+//////////////////////////////////////////////////////// Display Homes for sale button on listing layout
+// check custom field "homes_for_sale_btn"
+
+add_shortcode( 'show_hfs_btn', 'show_hfs_btn' );
+function show_hfs_btn($atts, $content = null) {
+    extract(shortcode_atts(array(
+        'size'   => '1px',
+        'color'  => '#bdc2c6',
+    ), $atts ) );
+    
+    $key = 'nhfs';
+    $show = get_post_custom_values($key);
+    $area = get_the_title();
+    $size = 'lg';
+    $classes = 'btn btn-default ' . $class . ' btn-' . $size;
+    $color = '#003764';
+    $fcolor = '#ffffff';
+    $float = 'none';
+    $target = '';
+
+    if( !empty($show) ) {
+        return '<a type="button" class="' . $classes . '" href="' . $show[0] . '" style="background:' . $color . ';color:'. $fcolor . ';float:' . $float . ';margin:0.5em 0.5em 0.5em 0 !important;" target="' . $target . '">' . $area . ' Homes for Sale</a>';
+        //print_r($show);
+    };
+    
+    return ''; // do nothing
+}
+
+////////////////////////////////////////////////////////
 
 ////////////////////////////////////////////////////////
 

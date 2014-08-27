@@ -31,6 +31,7 @@ header('X-UA-Compatible: IE=edge,chrome=1');
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
+    <link rel='stylesheet' id='hsr-main-css'  href='/wp-content/themes/DT_homespot/tt-lib/css/tt-hsr-main.css?ver=1.0' type='text/css' media='all' />
 </head>
 <!-- [HSR] FRAMRWORK // BODY -->
 <body class="container-fluid">

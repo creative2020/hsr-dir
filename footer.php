@@ -1,3 +1,5 @@
+
+
 <?php 
 /* =============================================================================
    [PREMIUMPRESS FRAMEWORK] THIS FILE SHOULD NOT BE EDITED
@@ -36,7 +38,11 @@ global $CORE, $userdata; ?>
 
 </section> 
 
-<?php hook_container_after(); /* HOOK */ ?> 
+<?php hook_container_after(); /* HOOK */ ?>
+
+<?php // 2020 added
+echo do_shortcode('[tt_hsr_qsearch]');
+?>
 
 <?php hook_footer(_design_footer());?>
  

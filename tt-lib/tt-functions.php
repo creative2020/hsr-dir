@@ -16,7 +16,7 @@ require_once ('plugins/github-updater/github-updater.php');
 require_once ('tt-shortcodes.php');
 
 // CPT's
-//require_once ('tt-cpt.php');
+require_once ('tt-cpt.php');
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////// Taxonomies
 
@@ -86,6 +86,24 @@ register_field_group(array (
 	'title' => 'Homepage',
 	'fields' => array (
 		array (
+			'key' => 'hp_message',
+			'label' => 'Message',
+			'name' => 'hp_message',
+			'prefix' => '',
+			'type' => 'text',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'default_value' => '',
+			'placeholder' => 'Enter your message',
+			'prepend' => '',
+			'append' => '',
+			'formatting' => 'html',
+			'maxlength' => '',
+			'readonly' => 0,
+			'disabled' => 0,
+		),
+        array (
 			'key' => 'field_hpbox1_img',
 			'label' => 'Box1 Image',
 			'name' => 'box1_image',
@@ -355,10 +373,10 @@ if( !function_exists("tt_theme_styles") ) {
 
         // child themes
         wp_enqueue_style( 'hsr-main', get_stylesheet_directory_uri() . '/tt-lib/css/tt-hsr-main.css', array('core'), '1.0', 'all' );
-        //wp_enqueue_style( 'hsr-main' );
+        //wp_enqueue_style( 'tt-beta-css', 'http://local3.homespotrealty.com/wp-content/themes/DT_homespot/tt-lib/css/tt-hsr-main.css', array('hsr-main'), '1.0', 'all' );
     }
 }
-add_action( 'wp_enqueue_scripts', 'tt_theme_styles' );
+add_action( 'wp_enqueue_scripts', 'tt_theme_styles',99 );
 
 //wp_enqueue_style( $handle, $src, $deps, $ver, $media );
 

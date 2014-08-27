@@ -13,6 +13,18 @@
     color:#fff;
 }
 
+/*HP Break*/
+
+#hp-message {
+	background: #bdc2c6;
+	padding: 20px 0;
+	padding: 2rem 0;
+}
+.hp-break h3{
+    color:#737373;
+    text-align:center;
+}
+
 /* Search - homepage */
 #search {
 	background: #004a98;
@@ -279,6 +291,7 @@ and (max-width : 768px) {
     text-transform:capitalize;
     padding: 1.5em 0 0 1.5em !important;
 }
+.wlt_shortcode_TITLE,
 .block-title h1, .block .block-title h3 {
     font-size: 1.7em;
     line-height: 30px;
@@ -557,6 +570,21 @@ h4.media-heading {
     padding-top: 0.7em;
 }
 
+ul li a.headBox1 {
+    list-style-type:none;
+    color:red;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* mobile ------------------------START------------------- */
 
 @media only screen 
@@ -626,65 +654,13 @@ h4.media-heading {
     overflow:hidden;
 }
 
-/* Shortcode CSS */
-.hs-break {
-    color:#003764;
-    font-size:2.0em;
-    width:100%;
-    margin:8px 16px 8px 32px;
-    padding:8px 0 0 16px;
-    border-bottom:solid 2px #003764;
-    height:66px;
-}
-.hs-callout {
-    text-align:center;
-    color:#fff;
-    font-size:3.5em;
-    padding-top:12px;
-    margin:16px 32px 0 16px;
-    float:left;
-    border-radius: 120px;
-    width:100px !important;
-    height:100px;
-    display:block;
-    background-color:#fdb825;
-    }
-.hs-break2 {
-    color:#003764;
-    font-size:2.0em;
-    width:100%;
-    margin:8px 16px 8px 32px;
-    padding:8px 0 0 16px;
-    border-bottom:solid 2px #003764;
-    height:66px;
-}
-.hs-callout2 {
-    text-align:center;
-    color:#fff;
-    font-size:2.0em;
-    margin:8px 32px 0 0;
-    float:left;
-    border-radius: 120px;
-    width:66px !important;
-    height:66px;
-    display:block;
-    background-color:#fdb825;
-    padding-top: 6px;
-    }
-.hs-text1 {
-    margin:0 0 0 150px;
-}   
-.hs-text-c1 {
-    margin:16px;
-    padding:32px;
-    background-color:#cccccc;
-}
-.hs-h1 {
-    color:#003764;
-    font-size:2.0em;
-    margin:8px 16px 8px 0;
-    padding:8px 0 0 0;
-}
+
+
+
+
+
+
+
 
 
 

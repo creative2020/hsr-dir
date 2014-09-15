@@ -182,7 +182,7 @@ function hsr_btn1($atts, $content = null) {
         'fcolor'  => '#ffffff', //#ffffff
         'link'    => '#',
         'float'    => 'none',
-        'target'    => '',
+        'target'    => '_blank',
         'class' => '',
     ), $atts ) );
 
@@ -214,7 +214,10 @@ function show_hfs_btn($atts, $content = null) {
         'color'  => '#bdc2c6',
     ), $atts ) );
     
+    $id = get_the_ID;
     $key = 'nhfs';
+    $f_btn_link = get_post_custom_values('f_btn_link');
+    $f_btn_label = get_post_custom_values('f_btn_label');
     $show = get_post_custom_values($key);
     $area = get_the_title();
     $size = 'lg';
@@ -222,11 +225,17 @@ function show_hfs_btn($atts, $content = null) {
     $color = '#003764';
     $fcolor = '#ffffff';
     $float = 'none';
-    $target = '';
+    $target = '_blank';
+    $taxonomy = 'listing';
+    $terms = get_the_terms( $id, $taxonomy );
 
-    if( !empty($show) ) {
+    if( !empty($show[0]) ) {
         return '<a type="button" class="' . $classes . '" href="' . $show[0] . '" style="background:' . $color . ';color:'. $fcolor . ';float:' . $float . ';margin:0.5em 0.5em 0.5em 0 !important;" target="' . $target . '">' . $area . ' Homes for Sale</a>';
-        //print_r($show);
+        //print_r($show[0]);
+    };
+    if( !empty($f_btn_link[0]) ) {
+        return '<a type="button" class="' . $classes . '" href="' . $f_btn_link[0] . '" style="background:' . $color . ';color:'. $fcolor . ';float:' . $float . ';margin:0.5em 0.5em 0.5em 0 !important;" target="' . $target . '">' . $f_btn_label[0] . '</a>';
+        //print_r($f_btn_link[0]);
     };
     
     return ''; // do nothing

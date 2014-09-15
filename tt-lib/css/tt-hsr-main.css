@@ -293,7 +293,7 @@ and (max-width : 768px) {
 }
 .wlt_shortcode_TITLE,
 .block-title h1, .block .block-title h3 {
-    font-size: 1.7em;
+    font-size: 1.2em;
     line-height: 30px;
     padding: 0 0 0 0px;
     margin: 0px !important;
@@ -302,6 +302,7 @@ and (max-width : 768px) {
     font-stretch:normal !important;
     color:#bdc2c6;
 }
+
 #core_right_column .block .block-title {
     background: #004894 url('/wp-content/themes/DT_homespot/img/mark-20k.png') no-repeat;
     background-size:55px;

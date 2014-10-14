@@ -341,10 +341,6 @@ and (max-width : 768px) {
 	vertical-align: bottom;
 }
 
-#core_middle_column {
-    width:66.66666667% !important;
-    padding:0 0 0 8.33333333%;
-}
 #core_right_column {
 }
 #core_left_column {
@@ -618,7 +614,6 @@ h4.media-heading {
 .block-content {
     padding:0 !important;
 }
-
 
 } /* mobile ------------------------END------------------- */
 

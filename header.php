@@ -122,6 +122,6 @@ hook_breadcrumbs_after(); /* HOOK */ ?>
     <?php } ?>
     
     <!-- [WLT] FRAMRWORK // MIDDLE COLUMN -->
-	<article class="<?php $CORE->CSS("columns-middle"); ?>" id="core_middle_column"><?php echo $CORE->ERRORCLASS(); ?><div id="core_ajax_callback"></div><?php echo $CORE->BANNER('middle_top'); ?>  
+	<article class="mobile-fix <?php $CORE->CSS("columns-middle"); ?>" id="core_middle_column"><?php echo $CORE->ERRORCLASS(); ?><div id="core_ajax_callback"></div><?php echo $CORE->BANNER('middle_top'); ?>  
     
 <?php } // end no custom home page ?>

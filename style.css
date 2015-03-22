@@ -459,6 +459,7 @@ ul.categorysublist,
     padding-left:1.0em !important;
     background-color:transparent !important;
 }
+<<<<<<< HEAD
 .grid_style .itemdata {
     max-width:33% !important;
 }
@@ -531,6 +532,74 @@ h1 {
     font-size:1.8em;
 }
 
+=======
+
+.wlt_thumbnail {
+    padding: 0px !important;
+    border: 0px solid #ccc !important;
+}
+.wlt_search_results.grid_style .frame {
+    width: 100%;
+    background: #fff;
+    padding: 0 !important;
+}
+.item .thumbnail {
+    background-color:#F2F2F2  !important;
+    border-color: #cdcfd0 !important;
+}
+.wlt_search_results.grid_style .item.featured .thumbnail {
+    color: #01365d !important;
+    background-color:#004894 !important;
+    border-color: #01365d !important;
+}
+.wlt_search_results.list_style .item.featured .thumbnail {
+    color: #01365d !important;
+    background-color:#F2F2F2 !important;
+    border-color: #004894 !important;
+}
+.wlt_search_results.list_style .item.featured .thumbnail:hover,
+.wlt_search_results.list_style .item .thumbnail:hover,
+.wlt_search_results.grid_style .item.featured .thumbnail:hover,
+.wlt_search_results.grid_style .item .thumbnail:hover{
+    background-color:#fbb12f !important;
+    border-color: #fbb12f !important;
+}
+.wlt_search_results.grid_style .frame {
+    width: 100%;
+    height:110px;
+    overflow:hidden;
+    background: transparent;
+    padding: 0 !important;
+}
+.wlt_search_results.grid_style .thumbnail .frame img {
+    max-width: 100%;
+    width: 100%;
+}
+.wlt_search_results.grid_style .item.featured h1 a {
+    color: #ffffff;
+}
+.wlt_search_results.list_style .item.featured h1 a {
+    color: #01365d;
+}
+.wlt_search_results.grid_style h3 a {
+    font-weight:normal;
+    font-size:0.9em;
+    color: white;
+}
+.wlt_search_results.list_style h3 a {
+    font-weight:normal;
+    font-size:0.9em;
+    color: #01365d;
+}
+#finder-wrapper, iframe {
+    border-style:none;
+    border-top-color:transparent !important;
+}
+#core_middle_column {
+    width:66.66666667%;
+    padding:0 0 0 8.33333333%;
+}
+>>>>>>> 7982926b34eb21a0f2767f5e195da56b9639888c
 /* mobile ------------------------START------------------- */
 
 @media only screen 
@@ -539,6 +608,7 @@ and (max-width : 768px) {
 
 #core_middle_column {
     width:100%;
+<<<<<<< HEAD
     padding:0 30px 0 0%;
     margin:0 30px 0 15px;
 }
@@ -546,6 +616,13 @@ h1 {
     font-size:1.5em;
 }
 
+=======
+    padding:0 0 0 0%;
+    margin:0 0 0 15px;
+}
+
+
+>>>>>>> 7982926b34eb21a0f2767f5e195da56b9639888c
 } /* mobile ----------------------END------------------- */
 
 

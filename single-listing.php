@@ -111,13 +111,8 @@ if ( $the_query->have_posts() ) {
     <div class="build-section">
     </div>
         <ul class="list-unstyled">
-<<<<<<< HEAD
-            <li class="build-icon-link"><a href="#picture_1"><i class="fa fa-arrow-circle-right"></i> Gallery</a></li>
-            <li class="build-icon-link"><a href="#build"><i class="fa fa-arrow-circle-right"></i> Features</a></li>
-=======
             <li class="build-icon-link"><a href="#"><i class="fa fa-arrow-circle-right"></i> Gallery</a></li>
             <li class="build-icon-link"><a href="#"><i class="fa fa-arrow-circle-right"></i> Features</a></li>
->>>>>>> 7982926b34eb21a0f2767f5e195da56b9639888c
             <li class="build-icon-link"><a href="#plan_1"><i class="fa fa-arrow-circle-right"></i> Floorplan</a></li>
             <li class="build-icon-link"><a href="#information"><i class="fa fa-arrow-circle-right"></i> Information</a></li>
         </ul>
@@ -126,11 +121,7 @@ if ( $the_query->have_posts() ) {
     <div class="w100 build-menu clearfix">
         <ul class="build-menu-links list-unstyled">
             <a href="#plan_1"><li class="build-btn build-view-floorplan pull-left">View Floorplan</li></a>
-<<<<<<< HEAD
-            <a href="#picture_1"><li class="build-btn build-view-gallery pull-left">View Gallery</li></a>
-=======
             <a href="#"><li class="build-btn build-view-gallery pull-left">View Gallery</li></a>
->>>>>>> 7982926b34eb21a0f2767f5e195da56b9639888c
             <a href="#information"><li class="last build-btn build-information pull-left">Information</li></a>
         </ul>
     </div>  
@@ -180,11 +171,7 @@ Storing big pictures above
         </ul>
     </div>
         
-<<<<<<< HEAD
-        <div class="build-desc" id="build">
-=======
         <div class="build-desc">
->>>>>>> 7982926b34eb21a0f2767f5e195da56b9639888c
             <h3 class="build">Description</h3>
             <p><?php echo $desc; ?></p>
         </div>

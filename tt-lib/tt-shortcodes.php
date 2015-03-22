@@ -109,7 +109,11 @@ function tt_hsr_qsearch ( $atts ) {
             <div class="col-md-12">
                 <div id="callout">
       <div class="col-xs-10 col-xs-offset-1 col-sm-12">
+<<<<<<< HEAD
 	    <p><span class="hidden-xs">Find KC Area Homes </span><a href="http://realestate.homespotrealty.com/idx/search/advanced"><img src="/wp-content/themes/DT_homespot/img/callout_btn.png" alt="Overland Park Homes"></a></p>
+=======
+	    <p><span class="hidden-xs">Looking for more KC Homes? </span><a href="http://realestate.homespotrealty.com/idx/search/advanced"><img src="/wp-content/themes/DT_homespot/img/callout_btn.png" alt=""></a><span class="hidden-xs">now</span></p>
+>>>>>>> 7982926b34eb21a0f2767f5e195da56b9639888c
       </div>
     </div>
             </div>    
@@ -136,7 +140,12 @@ function tt_hsr_hp_break ( $atts ) {
 ?>
     <div id="hp-message">
         <div class="row">
+<<<<<<< HEAD
             <div class="col-md-12">                
+=======
+            <div class="col-md-12">
+                
+>>>>>>> 7982926b34eb21a0f2767f5e195da56b9639888c
       <div class="hp-break col-xs-10 col-xs-offset-1">
 	    <h3><?php the_field('hp_message','options'); ?></h3>
       </div>

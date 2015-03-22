@@ -16,7 +16,11 @@ require_once ('plugins/github-updater/github-updater.php');
 require_once ('tt-shortcodes.php');
 
 // CPT's
+<<<<<<< HEAD
 //require_once ('tt-cpt.php');
+=======
+require_once ('tt-cpt.php');
+>>>>>>> 7982926b34eb21a0f2767f5e195da56b9639888c
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////// Taxonomies
 
